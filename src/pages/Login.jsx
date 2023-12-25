@@ -2,19 +2,22 @@ import React, { useContext, useState } from "react";
 import { AuthContext } from "../context/AuthProvider";
 
 const Login = () => {
-  const [email,setEmail] = useState("")
-  const [pass,setPass] = useState("")
-  const {login} = useContext(AuthContext)
-  
-  const handleSubmit= (e)=>{
-    e.preventDefault()
-    console.log({email,pass})
-    if(email.toLowerCase()==="admin@aa.com" && pass.toLowerCase()==="admin"){
-      login({email,pass})
-    }else{
-      alert("Kullanıcı bilgileri yanlış")
+  const [email, setEmail] = useState("");
+  const [pass, setPass] = useState("");
+  const { login } = useContext(AuthContext);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log({ email, pass });
+    if (
+      email.toLowerCase() === "admin@aa.com" &&
+      pass.toLowerCase() === "admin"
+    ) {
+      login({ email, pass });
+    } else {
+      alert("Kullanıcı bilgileri yanlış");
     }
-  }
+  };
   return (
     <div className="loginDiv">
       <div className="h-[500px] w-11/12 sm:w-[475px] bg-white rounded-[20px] p-5 flex justify-between flex-col text-center">
@@ -33,7 +36,10 @@ const Login = () => {
           </p>
         </div>
 
-        <form onSubmit={handleSubmit} className="flex flex-col text-left p-3 gap-5">
+        <form
+          onSubmit={handleSubmit}
+          className="flex flex-col text-left p-3 gap-5"
+        >
           <div className="flex flex-col gap-2">
             <label
               className="font-montserrat text-label text-labelColor hover:cursor-pointer hover:after:content-['admin@aa.com'] hover:after:text-black hover:after:pl-3 hover:after:underline"
@@ -42,11 +48,11 @@ const Login = () => {
               Email
             </label>
             <input
-              className="login-input"//ortak özellikleri @layer components altında topladık
+              className="login-input" //ortak özellikleri @layer components altında topladık
               type="email"
               placeholder="Enter your email"
               value={email}
-              onChange={(e)=>setEmail(e.target.value)}
+              onChange={(e) => setEmail(e.target.value)}
               required
               // autoFocus
             />
@@ -63,7 +69,7 @@ const Login = () => {
               type="password"
               name="pass"
               value={pass}
-              onChange={(e)=>setPass(e.target.value)}
+              onChange={(e) => setPass(e.target.value)}
               placeholder="Enter your password"
               required
             />
@@ -76,8 +82,7 @@ const Login = () => {
           </button>
           <p className="flex justify-center items-center flex-wrap">
             <span className="text-label font-montserrat font-[400] text-labelColor">
-              {" "}
-              Forgot your password?{" "}
+              Forgot your password?
             </span>
             <span className="text-main text-[14px] font-montserrat font-[500] underline ml-1">
               Reset Password
