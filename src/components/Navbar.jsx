@@ -21,7 +21,7 @@ const navigation = [
 const Navbar = () => {
   const [show, setShow] = useState(false);
   const { logout } = useContext(AuthContext);
-  const location = useLocation();
+  const location = useLocation();//!useLocation hook'u, geçerli konumu bir nesne olarak döndürür. Bu nesne, routerdan gelen konum yolunu, konum parametrelerini ve konum durumunu içerir.
   console.log(location);
 
   return (
@@ -63,7 +63,7 @@ const Navbar = () => {
                 <NavLink
                   to={item.path}
                   className={`block hover:bg-main rounded-full py-2 px-4 hover:text-white ${
-                    location.pathname === item.path ? "underline scale-125" : ""
+                    location.pathname === item.path ? "underline scale-150" : ""
                   }`}
                 >
                   {item.title}
