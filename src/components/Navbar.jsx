@@ -1,8 +1,21 @@
-import React, { useContext, useState } from "react";
-import logo from "../assets/logo.png";
-import { closeNavbar, openNavbar, logoutIcon } from "../helper/icons";
-import { NavLink, useLocation } from "react-router-dom";
-import { AuthContext } from "../context/AuthProvider";
+import React, {
+  useContext,
+  useState,
+} from 'react';
+
+import {
+  NavLink,
+  useLocation,
+} from 'react-router-dom';
+
+import logo from '../assets/logo.png';
+import { AuthContext } from '../context/AuthProvider';
+import {
+  closeNavbar,
+  logoutIcon,
+  openNavbar,
+} from '../helper/icons';
+
 const navigation = [
   {
     title: "Home",
@@ -34,9 +47,9 @@ const Navbar = () => {
             rel="noopener noreferrer"
             className="flex items-center"
           >
-            <img src={logo} width={50} height={50} alt="Clarusway" />
+            <img src={logo} width={50} height={50} alt="MD-STORE" />
             <span className="text-gray-700 hover:text-gray-900 font-medium">
-              Clarusway
+             MD-STORE
             </span>
           </a>
           {/**iconu md ekranlardan sonra gizlensin diyoruz */}
