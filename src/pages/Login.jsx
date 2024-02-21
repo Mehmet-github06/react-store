@@ -1,5 +1,9 @@
-import React, { useContext, useState } from "react";
-import { AuthContext } from "../context/AuthProvider";
+import React, {
+  useContext,
+  useState,
+} from 'react';
+
+import { AuthContext } from '../context/AuthProvider';
 
 const Login = () => {
   const [email,setEmail] = useState("")
@@ -20,7 +24,7 @@ const Login = () => {
         <div className="flex justify-center items-center mt-2 gap-2">
           <span className="w-[6px] bg-yellow-500 h-[39px]"></span>
           <h1 className="text-[22px] sm:text-[32px] font-montserrat font-[700] uppercase">
-            Clarus Store
+            MD Store
           </h1>
         </div>
         <div className="my-2">
