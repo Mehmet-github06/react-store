@@ -42,7 +42,7 @@ const Navbar = () => {
       <div className="gap-x-14 items-center max-w-screen-xl mx-auto px-4 md:flex md:px-8">
         <div className="flex items-center justify-between py-5 md:block">
           <a
-            href="https://clarusway.com/"
+            href="https://react-store-h72u.vercel.app/dashboard"
             target="true"
             rel="noopener noreferrer"
             className="flex items-center"
