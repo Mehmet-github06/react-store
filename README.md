@@ -1,4 +1,4 @@
-# Store
+# Store App 🛒
 
 <div align="center">
   <img src="./src/assets/Animation.gif" />
@@ -18,7 +18,7 @@ In the project I created with React, after entering the login information, you a
 
 ## Live Demo
 
-[Furkan Store](https://react-store-h72u.vercel.app/)
+[Store](https://react-store-h72u.vercel.app/)
 
 ## Features
 
