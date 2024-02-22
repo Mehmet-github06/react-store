@@ -18,7 +18,7 @@ In the project I created with React, after entering the login information, you a
 
 ## Live Demo
 
-[Furkan Store](https://furkan-store.vercel.app/)
+[Furkan Store](https://react-store-h72u.vercel.app/)
 
 ## Features
 
