@@ -1,7 +1,7 @@
-# Furkan Store
+# Store
 
 <div align="center">
-  <img src="./src/assets/store.gif" />
+  <img src="./src/assets/Animation.gif" />
 </div>
 
 ## About the Project
